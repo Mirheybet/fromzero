@@ -42,7 +42,7 @@ class Library:
         self.library_list = []
         self.books_db = books_db
 
-    def read(self,id):
+    def read(self,id,self.books_db=[]):
         if (len(book_list)==0):
             print("Empty")
         for index in range(len(self.books_db)):
@@ -64,4 +64,4 @@ for one_book in book_list:
 
 print("<<CRUD>>")
 b1crud=Library(book_list)
-print(b1crud.read(1))
+print(b1crud.read(1,book_list))
